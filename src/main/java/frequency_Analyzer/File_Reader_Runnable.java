@@ -22,7 +22,7 @@ public class File_Reader_Runnable implements Runnable
 
     @Override
     public void run() 
-    {
+    { 
         try (BufferedReader br = new BufferedReader(new FileReader(file_path))) 
         {
             String line;
@@ -61,6 +61,7 @@ public class File_Reader_Runnable implements Runnable
         {
             e.printStackTrace();
         }
+        
     }
 
     public static void main(String[] args) 
